@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Tika
+  description: Topics management with Kafka
+  namespace: selfservice
+  labels:
+    for-public-consumption: yes
+  annotations:
+    dfds.cloud/auth: okta 
+spec:
+  type: library
+  lifecycle: production
+  owner: devex@example.com
