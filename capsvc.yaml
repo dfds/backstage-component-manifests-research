@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Capability-Service
+  description: Handles all metadata surrounding Capabilities
+  namespace: selfservice
+  labels:
+    for-public-consumption: no
+  annotations:
+    dfds.cloud/auth: okta 
+spec:
+  type: service
+  lifecycle: production
+  owner: devex@example.com
