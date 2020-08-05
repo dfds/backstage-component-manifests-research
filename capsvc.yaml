@@ -1,4 +1,4 @@
-apiVersion: backstage.io/v1alpha1
+apiVersion: dfds.cloud/v1alpha1
 kind: Component
 metadata:
   name: Capability-Service
@@ -12,3 +12,4 @@ spec:
   type: service
   lifecycle: production
   owner: devex@example.com
+  capability: DED-Infrastructure
