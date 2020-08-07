@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Tika
-  description: Topics management with Kafka
+  name: Dafda
+  description: C# Kafka library.
   namespace: selfservice
   labels:
     for-public-consumption: yes
@@ -10,5 +10,5 @@ metadata:
     dfds.cloud/auth: okta 
 spec:
   type: library
-  lifecycle: production
+  lifecycle: experimental
   owner: devex@example.com

@@ -1,0 +1,15 @@
+apiVersion: dfds.cloud/v1alpha1
+kind: Component
+metadata:
+  name: Aws-Janitor
+  description: X
+  namespace: selfservice
+  labels:
+    for-public-consumption: no
+  annotations:
+    dfds.cloud/auth: okta 
+spec:
+  type: service
+  lifecycle: production
+  owner: devex@example.com
+  capability: DED-Infrastructure
