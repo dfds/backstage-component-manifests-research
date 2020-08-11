@@ -9,7 +9,7 @@ metadata:
   annotations:
     dfds.cloud/auth: okta 
 spec:
-  type: service
+  type: website
   lifecycle: production
   owner: devex@example.com
   capability: DED-Infrastructure
