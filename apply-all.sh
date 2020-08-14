@@ -55,6 +55,7 @@ curl --request POST \
 	"type": "github",
 	"target": "https://github.com/dfds/backstage-component-manifests-research/blob/master/tika.yaml"
 }'
+# ADO
 curl --request POST \
   --url https://backstage.dfds.cloud/backend/catalog/locations \
   --header 'content-type: application/json' \
@@ -68,4 +69,13 @@ curl --request POST \
   --data '{
 	"type": "azuredevops",
 	"target": "https://dev.azure.com/dfds/emcla-sandbox/_git/backstage-ado-component-test?path=%2FAdSync.yaml"
+}'
+
+# Private GitHub repo
+curl --request POST \
+  --url https://backstage.dfds.cloud/backend/catalog/locations \
+  --header 'content-type: application/json' \
+  --data '{
+	"type": "github/api",
+	"target": "https://github.com/dfds/emcla-sandbox/blob/master/poc/backstage/research/private-component.yaml"
 }'
